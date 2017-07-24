@@ -100,8 +100,11 @@ I verified that my perspective transform was working as expected by drawing the 
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
-I used the histogram method to idenitfy lane lines
-![alt text](https://raw.githubusercontent.com/krashidov/sdc-p4-advanced-lane-finding/master/project/anefinding.jpg)
+I used the histogram method to idenitfy lane lines. 
+The histogram method splits an image into a number of windows. For each window we look at where the pixels are bunched up together. We do this by reducing all of the pixels into a simple histogram chart and seeing where the peaks are. We do this for each window in the image. I was not able to get window optimization completed for the pipeline portion of this project.
+
+In the pipeline, I would detect anamolies by checking if the average central distance of the previous 20 frames differs from the current distance by more than 0.315 meters. An easier way to do this kind of anomaly check would be to just enforce a min and max size for the lane.
+![alt text](https://raw.githubusercontent.com/krashidov/sdc-p4-advanced-lane-finding/master/project/lanefinding.jpg)
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 

@@ -101,7 +101,7 @@ I verified that my perspective transform was working as expected by drawing the 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
 I used the histogram method to idenitfy lane lines
-![alt text][https://raw.githubusercontent.com/krashidov/sdc-p4-advanced-lane-finding/master/project/anefinding.jpg]
+![alt text](https://raw.githubusercontent.com/krashidov/sdc-p4-advanced-lane-finding/master/project/anefinding.jpg)
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
@@ -112,7 +112,7 @@ This code is based on the video walkthrough provided by udacity. First we need a
 
 I implemented this step in the `process_image` method of the tracker class under the comment marked " # Warp the blank back to original image space using inverse perspective matrix (Minv)"
 
-![alt text][https://raw.githubusercontent.com/krashidov/sdc-p4-advanced-lane-finding/master/project/output0.jpg]
+![alt text](https://raw.githubusercontent.com/krashidov/sdc-p4-advanced-lane-finding/master/project/output0.jpg)
 
 ---
 

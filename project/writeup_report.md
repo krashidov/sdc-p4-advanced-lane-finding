@@ -44,20 +44,20 @@ I start by preparing "object points", which will be the (x, y, z) coordinates of
 
 I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result: 
 
-![alt text][./sdc-p4-advanced-lane-finding/project/undistorted.jpg]
+![alt text](./sdc-p4-advanced-lane-finding/project/undistorted.jpg)
 
 ### Pipeline (single images)
 
 #### 1. Provide an example of a distortion-corrected image.
 
 To demonstrate this step, I will describe how I apply the distortion correction to one of the test images like this one:
-![alt text][./undistorted.jpg]
+![alt text](./undistorted.jpg)
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
 I used a combination of color and gradient thresholds to generate a binary image (thresholding steps are in cell 3 marked Color and Gradient Thresholding).  Here's an example of my output for this step. 
 
-![alt text][./thresholding]
+![alt text](./thresholding])
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
@@ -96,7 +96,7 @@ This resulted in the following source and destination points:
 
 I verified that my perspective transform was working as expected by drawing the `src` and `dst` points onto a test image and its warped counterpart to verify that the lines appear parallel in the warped image.
 
-![alt text][https://raw.githubusercontent.com/krashidov/sdc-p4-advanced-lane-finding/master/project/output0.jpg]
+![alt text](https://raw.githubusercontent.com/krashidov/sdc-p4-advanced-lane-finding/master/project/output0.jpg)
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 

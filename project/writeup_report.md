@@ -38,7 +38,7 @@ You're reading it!
 
 #### 1. Briefly state how you computed the camera matrix and distortion coefficients. Provide an example of a distortion corrected calibration image.
 
-The code for this step is contained in the first code cell of the IPython notebook located in "./examples/example.ipynb".
+The code for this step is contained in the first code cell of the IPython notebook located in "./project/project.ipynb".
 
 I start by preparing "object points", which will be the (x, y, z) coordinates of the chessboard corners in the world. Here I am assuming the chessboard is fixed on the (x, y) plane at z=0, such that the object points are the same for each calibration image.  Thus, `objp` is just a replicated array of coordinates, and `objpoints` will be appended with a copy of it every time I successfully detect all chessboard corners in a test image.  `imgpoints` will be appended with the (x, y) pixel position of each of the corners in the image plane with each successful chessboard detection.  
 
@@ -51,7 +51,7 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
 #### 1. Provide an example of a distortion-corrected image.
 
 To demonstrate this step, I will describe how I apply the distortion correction to one of the test images like this one:
-![alt text](./sdc-p4-advanced-lane-finding/project/undistorted.jpg)
+![alt text](https://raw.githubusercontent.com/krashidov/sdc-p4-advanced-lane-finding/master/project/undistorted.jpg)
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
@@ -123,7 +123,7 @@ I implemented this step in the `process_image` method of the tracker class under
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
-Here's a [link to my video result](./sdc-p4-advanced-lane-finding/output.mp4)
+Here's a [link to my video result](https://github.com/krashidov/sdc-p4-advanced-lane-finding/blob/master/project/output.mp4)
 
 ---
 

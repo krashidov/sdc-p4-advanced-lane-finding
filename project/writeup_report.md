@@ -96,7 +96,7 @@ This resulted in the following source and destination points:
 
 I verified that my perspective transform was working as expected by drawing the `src` and `dst` points onto a test image and its warped counterpart to verify that the lines appear parallel in the warped image.
 
-![alt text][./https://raw.githubusercontent.com/krashidov/sdc-p4-advanced-lane-finding/master/project/output0.jpg]
+![alt text][https://raw.githubusercontent.com/krashidov/sdc-p4-advanced-lane-finding/master/project/output0.jpg]
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 

@@ -61,7 +61,15 @@ I used a combination of color and gradient thresholds to generate a binary image
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
-The code for my perspective transform includes a function called `warper()`, which appears in lines 1 through 8 in the file `example.py` (output_images/examples/example.py) (or, for example, in the 3rd code cell of the IPython notebook).  The `warper()` function takes as inputs an image (`img`), as well as source (`src`) and destination (`dst`) points.  I chose the hardcode the source and destination points in the following manner:
+The code for my perspective transform is in the `process_image` method of the `Tracker` class under the section marked `Perspective Transform`
+
+Here's the code for doing the actual perspective transform 
+```python 
+    M = cv2.getPerspectiveTransform(source, destination)
+    Minv = cv2.getPerspectiveTransform(destination, source)
+    warped = cv2.warpPerspective(preprocess_image, M, (width, height), flags=cv2.INTER_LINEAR)
+```
+We then get the src points. To get the src points we make a trapezoidal figure. The `middle_width` modifier is how much smaller the top of the trapezoid is than the bottom. This code is based on the code in the walkthrough video. 
 
 ```python
     #Source Points

@@ -44,7 +44,7 @@ I start by preparing "object points", which will be the (x, y, z) coordinates of
 
 I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result: 
 
-![alt text](./sdc-p4-advanced-lane-finding/project/undistorted.jpg)
+![alt text](https://raw.githubusercontent.com/krashidov/sdc-p4-advanced-lane-finding/master/project/undistorted.jpg)
 
 ### Pipeline (single images)
 
@@ -57,7 +57,7 @@ To demonstrate this step, I will describe how I apply the distortion correction 
 
 I used a combination of color and gradient thresholds to generate a binary image (thresholding steps are in cell 3 marked Color and Gradient Thresholding).  Here's an example of my output for this step. 
 
-![alt text](./sdc-p4-advanced-lane-finding/project/thresholding.jpg])
+![alt text](https://raw.githubusercontent.com/krashidov/sdc-p4-advanced-lane-finding/master/project/thresholding.jpg])
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
@@ -96,12 +96,12 @@ This resulted in the following source and destination points:
 
 I verified that my perspective transform was working as expected by drawing the `src` and `dst` points onto a test image and its warped counterpart to verify that the lines appear parallel in the warped image.
 
-![alt text](./sdc-p4-advanced-lane-finding/project/warped.jpg)
+![alt text](https://raw.githubusercontent.com/krashidov/sdc-p4-advanced-lane-finding/master/project/warped.jpg)
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
 I used the histogram method to idenitfy lane lines
-![alt text][./sdc-p4-advanced-lane-finding/project/lanefinding.jpg]
+![alt text][https://raw.githubusercontent.com/krashidov/sdc-p4-advanced-lane-finding/master/project/anefinding.jpg]
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
@@ -112,7 +112,7 @@ This code is based on the video walkthrough provided by udacity. First we need a
 
 I implemented this step in the `process_image` method of the tracker class under the comment marked " # Warp the blank back to original image space using inverse perspective matrix (Minv)"
 
-![alt text][./sdc-p4-advanced-lane-finding/project/output0.jpg]
+![alt text][https://raw.githubusercontent.com/krashidov/sdc-p4-advanced-lane-finding/master/project/output0.jpg]
 
 ---
 
@@ -120,7 +120,7 @@ I implemented this step in the `process_image` method of the tracker class under
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
-Here's a [link to my video result](./sdc-p4-advanced-lane-finding/project/output.mp4)
+Here's a [link to my video result](./sdc-p4-advanced-lane-finding/output.mp4)
 
 ---
 
